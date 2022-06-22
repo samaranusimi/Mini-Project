@@ -9,7 +9,7 @@ int main()
     char name[50];
     fr = fopen("Eletricity bill", "w");
     printf("Customer name: ");
-    scanf("%s",&name[50]);
+    scanf("%s",name);
     printf("Customer id: ");
     scanf("%d",&id);
     printf("Unit Consumed: ");
@@ -38,12 +38,12 @@ int main()
     }
     amt=tamt+surcharge;
     fprintf(fr,"\n*******Eletricity Bill*******\n");
-    fprintf(fr,"Customer name                        :%s\n",name);
-    fprintf(fr,"Customer id                              :%d\n",id);
+    fprintf(fr,"Customer name                         :%s\n",name);
+    fprintf(fr,"Customer id                           :%d\n",id);
     fprintf(fr,"Unit Consumed                         :%d\n",unit);
-    fprintf(fr,"Amount charge %.2f per unit    :%.2f\n",rate,tamt);
-    fprintf(fr,"Surcharge                                 :%.2f\n",surcharge);
-    fprintf(fr,"Total amount                             :%.2f\n",amt);
+    fprintf(fr,"Amount charge %.2f per unit           :%.2f\n",rate,tamt);
+    fprintf(fr,"Surcharge                             :%.2f\n",surcharge);
+    fprintf(fr,"Total amount                          :%.2f\n",amt);
     fclose(fr);
     
    
